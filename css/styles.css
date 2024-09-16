@@ -1,0 +1,86 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    position: relative;
+}
+
+.menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu.active {
+    display: block;
+}
+
+.menu li {
+    margin: 0.5rem 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 0.5rem;
+}
+
+.menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .menu {
+        display: flex;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .menu li {
+        margin: 0 1rem;
+    }
+}
+
+main {
+    padding: 1rem;
+}
+
+footer {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 1rem;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
+.menu {
+    transition: max-height 0.3s ease-out;
+}
+
+.menu.active {
+    max-height: 200px; /* Ajuste conforme necessário */
+}

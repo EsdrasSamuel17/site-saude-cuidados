@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-rows: 60px 1fr 40px;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 10px;
+      height: 100vh;
+    }
+    .header {
+      grid-column: 1 / 4;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+    }
+    .footer {
+      grid-column: 1 / 4;
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+    .sidebar {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+    .main {
+      background-color: #e2e2e2;
+      padding: 10px;
+    }
+    .aside {
+      background-color: #ddd;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="header">Cabeçalho</div>
+    <div class="sidebar">Menu Lateral</div>
+    <div class="main">Conteúdo Principal</div>
+    <div class="aside">Informações Adicionais</div>
+    <div class="footer">Rodapé</div>
+  </div>
+</body>
+</html>
