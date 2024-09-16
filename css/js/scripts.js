@@ -22,6 +22,5 @@ function calcularIMC() {
         categoria = 'Obesidade';
     }
 
-    // Exibindo o resultado
     document.getElementById('resultado').textContent = `Seu IMC é ${imc.toFixed(2)}. Categoria: ${categoria}.`;
 }
