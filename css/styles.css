@@ -82,5 +82,5 @@ button:hover {
 }
 
 .menu.active {
-    max-height: 200px; /* Ajuste conforme necessário */
+    max-height: 200px;
 }
